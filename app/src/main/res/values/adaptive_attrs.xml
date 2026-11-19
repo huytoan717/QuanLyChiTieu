@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Content width below which this row places each item on its own line. -->
+    <attr name="adaptive_stackWidth" format="dimension" />
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="transaction_edit_title">Sửa giao dịch</string>
+    <string name="transaction_update_action">Lưu thay đổi</string>
+    <string name="transaction_updated_local">Đã lưu thay đổi trên thiết bị</string>
+    <string name="transaction_created_local">Đã lưu giao dịch trên thiết bị</string>
+    <string name="transaction_edit_load_failed">Chưa đọc được giao dịch. Nhấn Thử lại để tải dữ liệu.</string>
+    <string name="transaction_edit_missing">Giao dịch này đã bị xóa hoặc không còn trên thiết bị.</string>
+    <string name="transaction_edit_failed">Chưa lưu được thay đổi. Giao dịch có thể đã thay đổi hoặc bị xóa. Hãy mở lại chi tiết và thử lại.</string>
+    <string name="transaction_edit_retry">Thử lại</string>
+    <string name="transaction_legacy_category">Danh mục hiện tại: %1$s</string>
+    <string name="transaction_cap_title">Cảnh báo hạn mức chi tiêu</string>
+    <string name="transaction_cap_confirm">%1$s\n\nBạn vẫn muốn lưu khoản chi này?</string>
+    <string name="transaction_cap_save">Vẫn lưu</string>
+    <string name="transaction_cap_cancel">Quay lại chỉnh sửa</string>
+    <string name="transaction_open_details">Xem chi tiết giao dịch</string>
+    <plurals name="transaction_sync_pending_count">
+        <item quantity="one">Đã lưu trên thiết bị. Có %1$d thay đổi (thêm, sửa hoặc xóa) đang chờ đồng bộ.</item>
+        <item quantity="other">Đã lưu trên thiết bị. Có %1$d thay đổi (thêm, sửa hoặc xóa) đang chờ đồng bộ.</item>
+    </plurals>
+    <plurals name="transaction_sync_failed_count">
+        <item quantity="one">Đồng bộ chưa thành công. Có %1$d thay đổi đã lưu trên thiết bị, bao gồm cả giao dịch đã xóa.</item>
+        <item quantity="other">Đồng bộ chưa thành công. Có %1$d thay đổi đã lưu trên thiết bị, bao gồm cả giao dịch đã xóa.</item>
+    </plurals>
+</resources>

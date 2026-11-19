@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wallet_section_title">Ví của bạn</string>
+    <string name="wallet_manage_title">Quản lý ví</string>
+    <string name="wallet_total_label">Tổng số dư các ví</string>
+    <string name="wallet_balance_formula">Số dư mỗi ví = số dư ban đầu + thu − chi + chuyển vào − chuyển ra.</string>
+    <string name="wallet_storage_note">Thông tin ví được lưu trên thiết bị.</string>
+    <string name="wallet_edit_title">Chỉnh sửa ví</string>
+    <string name="wallet_edit_action">Sửa</string>
+    <string name="wallet_edit_description">Chỉnh sửa ví %1$s</string>
+    <string name="wallet_name_label">Tên ví</string>
+    <string name="wallet_opening_balance_label">Số dư ban đầu (VNĐ)</string>
+    <string name="wallet_opening_balance_help">Số dư trước các giao dịch đã ghi nhận.</string>
+    <string name="wallet_name_required">Nhập tên ví.</string>
+    <string name="wallet_opening_balance_invalid">Nhập số dư từ 0 đến 1.000.000.000.000 VNĐ.</string>
+    <string name="wallet_save">Lưu ví</string>
+    <string name="wallet_delete">Xóa ví</string>
+    <string name="wallet_delete_confirm">Bạn có muốn xóa ví “%1$s”?</string>
+    <string name="wallet_loading">Đang đọc danh sách ví…</string>
+    <string name="wallet_load_failed">Chưa đọc được dữ liệu ví. Vui lòng thử lại.</string>
+    <string name="wallet_empty">Chưa có ví. Chọn Thêm ví để bắt đầu.</string>
+    <string name="wallet_missing">Không tìm thấy ví này.</string>
+    <string name="wallet_deleting">Đang xóa ví…</string>
+    <string name="wallet_saved">Đã lưu ví</string>
+    <string name="wallet_deleted">Đã xóa ví</string>
+    <string name="wallet_save_failed">Chưa lưu được ví. Vui lòng thử lại.</string>
+    <string name="wallet_delete_failed">Chưa xóa được ví. Vui lòng thử lại.</string>
+    <string name="wallet_total_unavailable">—</string>
+</resources>

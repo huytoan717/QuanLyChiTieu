@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Quản Lý Chi Tiêu</string>
+    <string name="desc_avatar">Ảnh đại diện</string>
+    <string name="share">Chia sẻ</string>
+    <string name="period_week">Tuần</string>
+    <string name="period_month">Tháng</string>
+    <string name="period_year">Năm</string>
+</resources>

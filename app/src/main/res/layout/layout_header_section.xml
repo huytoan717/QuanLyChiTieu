@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="8dp">
+
+    <!-- Avatar Profile Picture -->
+    <FrameLayout
+        android:id="@+id/avatarContainer"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/imgAvatar"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:contentDescription="@string/desc_avatar"
+            android:src="@drawable/ic_avatar_placeholder" />
+
+        <!-- Status Dot -->
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="bottom|end"
+            android:background="@drawable/bg_dot_cyan" />
+    </FrameLayout>
+
+    <!-- Notification Bell Glass Button -->
+    <FrameLayout
+        android:id="@+id/layoutNotification"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_circle_translucent"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:contentDescription="Notification Bell"
+            android:src="@drawable/ic_bell"
+            app:tint="@color/text_primary" />
+
+        <!-- Red Notification Badge Dot -->
+        <View
+            android:layout_width="9dp"
+            android:layout_height="9dp"
+            android:layout_gravity="top|end"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_dot_pink" />
+    </FrameLayout>
+
+    <!-- User Info Header -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_toEndOf="@id/avatarContainer"
+        android:layout_toStartOf="@id/layoutNotification"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.05"
+            android:text="TÀI KHOẢN CÁ NHÂN"
+            android:textColor="@color/text_secondary"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Xin chào, Toan 👋"
+            android:textColor="@color/text_primary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

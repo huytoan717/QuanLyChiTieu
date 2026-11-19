@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.nhom9.quanlychitieu.ui.components.AdaptiveLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/layout_report_distribution_1_text"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:breakStrategy="simple" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/layout_report_distribution_2_text"
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp"
+            android:layout_marginStart="12dp"
+            android:breakStrategy="simple" />
+    </com.nhom9.quanlychitieu.ui.components.AdaptiveLinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Số liệu thời gian thực"
+        android:textSize="12sp"
+        android:textColor="@color/text_secondary"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="4dp"
+        android:visibility="gone"
+        android:breakStrategy="simple" />
+
+    <com.nhom9.quanlychitieu.ui.components.DonutChartView
+        android:id="@+id/donutChartView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:minHeight="220dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <com.nhom9.quanlychitieu.ui.components.AdaptiveLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:baselineAligned="false"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_card"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <FrameLayout
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:background="@drawable/bg_badge_pink">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/layout_budget_groups_19_contentdescription"
+                        android:src="@drawable/ic_shopping_cart"
+                        app:tint="@color/chart_category_shopping" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/layout_report_distribution_5_text"
+                        android:textColor="@color/text_primary"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:breakStrategy="simple" />
+
+                    <TextView
+                        android:id="@+id/txtDistPercentShopping"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/layout_report_distribution_6_text"
+                        android:textColor="@color/chart_category_shopping"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:breakStrategy="simple" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:baselineAligned="false"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_card"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <FrameLayout
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:background="@drawable/bg_badge_cyan">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/layout_budget_groups_9_contentdescription"
+                        android:src="@drawable/ic_car"
+                        app:tint="@color/chart_category_transport" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/activity_add_transaction_cat_transport_contentdescription"
+                        android:textColor="@color/text_primary"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:breakStrategy="simple" />
+
+                    <TextView
+                        android:id="@+id/txtDistPercentTransport"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/layout_category_section_13_text"
+                        android:textColor="@color/chart_category_transport"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:breakStrategy="simple" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.nhom9.quanlychitieu.ui.components.AdaptiveLinearLayout>
+
+        <com.nhom9.quanlychitieu.ui.components.AdaptiveLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:baselineAligned="false"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_card"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <FrameLayout
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:background="@drawable/bg_circle_translucent">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/layout_budget_groups_14_contentdescription"
+                        android:src="@drawable/ic_house"
+                        app:tint="@color/chart_category_home" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/layout_report_distribution_11_text"
+                        android:textColor="@color/text_primary"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:breakStrategy="simple" />
+
+                    <TextView
+                        android:id="@+id/txtDistPercentHome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/layout_category_section_13_text"
+                        android:textColor="@color/chart_category_home"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:breakStrategy="simple" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:baselineAligned="false"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_card"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <FrameLayout
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:background="@drawable/bg_badge_yellow">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/layout_report_distribution_13_contentdescription"
+                        android:src="@drawable/ic_gamepad"
+                        app:tint="@color/chart_category_entertainment" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/layout_report_distribution_14_text"
+                        android:textColor="@color/text_primary"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:breakStrategy="simple" />
+
+                    <TextView
+                        android:id="@+id/txtDistPercentGame"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/layout_category_section_5_text"
+                        android:textColor="@color/chart_category_entertainment"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:breakStrategy="simple" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.nhom9.quanlychitieu.ui.components.AdaptiveLinearLayout>
+    </LinearLayout>
+</LinearLayout>

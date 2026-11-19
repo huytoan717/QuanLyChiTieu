@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ui_transactions_loading">Đang đọc giao dịch…</string>
+    <string name="ui_transactions_load_error">Chưa đọc được giao dịch đã lưu. Vui lòng thử lại.</string>
+    <string name="ui_transactions_empty">Chưa có giao dịch. Nhấn nút + bên dưới để thêm.</string>
+    <string name="ui_transaction_date_time_pattern" formatted="false">HH:mm · dd/MM/yyyy</string>
+    <string name="ui_transaction_type_expense">Chi tiêu</string>
+    <string name="ui_transaction_type_income">Thu nhập</string>
+    <string name="ui_transaction_type_transfer">Chuyển khoản</string>
+    <string name="ui_transaction_title_category">%1$s · %2$s</string>
+    <string name="ui_transaction_amount_expense">−%1$s VNĐ</string>
+    <string name="ui_transaction_amount_income">+%1$s VNĐ</string>
+    <string name="ui_transaction_amount_transfer">%1$s VNĐ</string>
+    <string name="ui_transaction_wallet_transfer">%1$s → %2$s</string>
+    <string name="ui_transaction_details">%1$s\n%2$s</string>
+    <string name="ui_transaction_details_excluded">%1$s\n%2$s\nĐã chọn không tính vào ngân sách</string>
+
+    <string name="ui_edit_profile">Chỉnh sửa hồ sơ</string>
+    <string name="ui_add_wallet">Thêm ví</string>
+    <string name="ui_export_data">Xuất dữ liệu</string>
+    <string name="ui_cloud_sync">Đồng bộ đám mây</string>
+    <string name="ui_logout">Đăng xuất</string>
+    <string name="ui_change_theme">Thay đổi giao diện</string>
+    <string name="ui_change_currency">Thay đổi đơn vị tiền tệ</string>
+    <string name="ui_change_language">Thay đổi ngôn ngữ</string>
+    <string name="ui_help">Trợ giúp</string>
+    <string name="ui_biometric_security">Bảo mật sinh trắc học</string>
+    <string name="ui_add_budget">Thêm ngân sách</string>
+    <string name="ui_share_report">Chia sẻ báo cáo</string>
+    <string name="ui_filter_report">Lọc báo cáo theo tuần, tháng hoặc năm</string>
+    <string name="ui_feature_coming_soon">%1$s. Sắp có</string>
+    <string name="ui_feature_unavailable">Chưa khả dụng</string>
+
+    <string name="ui_bar_chart_description">Biểu đồ thu và chi minh họa trong bốn tuần. Mỗi nhóm có cột thu nhập màu xanh bên trái và chi tiêu màu tím bên phải. Không phải số liệu từ giao dịch đã lưu.</string>
+    <string name="ui_donut_chart_description">Phân bố chi tiêu minh họa, tổng 8.450.000 đồng. Mua sắm và ăn uống 35 phần trăm; di chuyển 25 phần trăm; nhà và hóa đơn 25 phần trăm; giải trí và game 15 phần trăm. Không phải số liệu từ giao dịch đã lưu.</string>
+    <string name="ui_wave_chart_description">Biểu đồ thu và chi minh họa. Đường xanh là thu nhập, đường tím là chi tiêu. Không phải số liệu từ giao dịch đã lưu.</string>
+    <string-array name="ui_chart_weeks">
+        <item>T1</item>
+        <item>T2</item>
+        <item>T3</item>
+        <item>T4</item>
+    </string-array>
+    <string-array name="ui_donut_chart_labels">
+        <item>TỔNG CHI MẪU</item>
+        <item>8.450.000</item>
+        <item>VNĐ</item>
+    </string-array>
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="transaction_amount_invalid_or_large">Số tiền không hợp lệ hoặc quá lớn. Vui lòng kiểm tra lại.</string>
+    <string name="transaction_amount_required">Nhập số tiền lớn hơn 0, ví dụ 150.000.</string>
+    <string name="transaction_checking">Đang kiểm tra…</string>
+    <string name="transaction_saved">Đã lưu giao dịch trên thiết bị</string>
+    <string name="transaction_save_failed">Chưa lưu được giao dịch. Dữ liệu nhập vẫn còn, vui lòng thử lại.</string>
+    <string name="transaction_source_wallet">Ví gửi</string>
+    <string name="transaction_wallet">Ví giao dịch</string>
+    <string name="transaction_choose_destination_wallet">Chọn ví nhận</string>
+    <string name="transaction_choose_wallet">Chọn ví giao dịch</string>
+    <string name="transaction_wallets_must_differ">Ví gửi và ví nhận phải khác nhau.</string>
+    <!-- Date and time pattern for SimpleDateFormat; preserve the pattern symbols. -->
+    <string name="transaction_date_time_pattern" formatted="false">HH:mm · dd/MM/yyyy</string>
+    <string name="transaction_cancel">Hủy</string>
+    <string name="transaction_confirm">Xác nhận</string>
+    <string name="transaction_next">Tiếp tục</string>
+    <string name="transaction_saving">Đang lưu…</string>
+    <string name="transaction_save">Lưu giao dịch</string>
+    <string name="transaction_discard_title">Bỏ thay đổi?</string>
+    <string name="transaction_discard_message">Giao dịch này chưa được lưu.</string>
+    <string name="transaction_keep_editing">Tiếp tục nhập</string>
+    <string name="transaction_discard">Bỏ thay đổi</string>
+
+    <!-- Display labels only. Stored values remain stable in AddTransactionActivity. -->
+    <string-array name="transaction_amount_labels">
+        <item>SỐ TIỀN CHI TIÊU (VNĐ)</item>
+        <item>SỐ TIỀN THU NHẬP (VNĐ)</item>
+        <item>SỐ TIỀN CHUYỂN KHOẢN (VNĐ)</item>
+    </string-array>
+    <string-array name="transaction_wallet_labels">
+        <item>Tiền mặt</item>
+        <item>Tài khoản cá nhân</item>
+        <item>Ví điện tử</item>
+    </string-array>
+    <string-array name="transaction_expense_labels">
+        <item>Ăn uống</item>
+        <item>Mua sắm</item>
+        <item>Di chuyển</item>
+        <item>Hóa đơn</item>
+        <item>Giải trí</item>
+        <item>Sức khỏe</item>
+        <item>Giáo dục</item>
+        <item>Khác</item>
+    </string-array>
+    <string-array name="transaction_income_labels">
+        <item>Lương</item>
+        <item>Thưởng</item>
+        <item>Kinh doanh</item>
+        <item>Đầu tư</item>
+        <item>Quà tặng</item>
+        <item>Hoàn tiền</item>
+        <item>Trợ cấp</item>
+        <item>Khác</item>
+    </string-array>
+</resources>

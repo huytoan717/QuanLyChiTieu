@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Clean Dark Theme Background & Surface Colors -->
+    <color name="bg_main_dark">#12131A</color>
+
+    <!-- Surface Card Colors (Neutral Clean) -->
+    <color name="glass_card_bg">#1D1F2A</color>
+    <color name="glass_card_stroke">#2D3142</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#94A3B8</color>
+    <color name="text_muted">#94A3B8</color>
+
+    <!-- Clean Primary Brand Accent Colors -->
+    <!-- Readable purple for text/icons; filled buttons retain a darker brand color. -->
+    <color name="cyan_accent">#A5B4FC</color>
+    <color name="brand_button">#5F5CE6</color>
+    <color name="brand_button_dark">#4F46E5</color>
+    <color name="cyan_badge_bg">#206366F1</color>
+
+    <color name="pink_accent">#818CF8</color>
+    <color name="pink_badge_bg">#20818CF8</color>
+
+    <color name="yellow_accent">#38BDF8</color>
+    <color name="yellow_badge_bg">#2038BDF8</color>
+
+    <color name="green_accent">#10B981</color>
+    <color name="green_badge_bg">#2010B981</color>
+
+    <color name="red_expense">#FB7185</color>
+
+    <!-- Charts and their legends must share the same semantic tokens. -->
+    <color name="chart_income">#38BDF8</color>
+    <color name="chart_expense">#818CF8</color>
+    <color name="chart_category_shopping">@color/pink_accent</color>
+    <color name="chart_category_transport">@color/cyan_accent</color>
+    <color name="chart_category_home">@color/yellow_accent</color>
+    <color name="chart_category_entertainment">@color/green_accent</color>
+    <color name="control_ripple">#33818CF8</color>
+
+    <!-- Bottom Bar & FAB -->
+    <color name="bottom_nav_bg">#181922</color>
+    <color name="bottom_nav_glass">#1D1F2A</color>
+    <color name="bottom_nav_stroke">#2D3142</color>
+</resources>

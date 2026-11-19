@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.QuảnLýChiTiêu" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/bg_main_dark</item>
+        <item name="android:statusBarColor">@color/bg_main_dark</item>
+        <item name="android:navigationBarColor">@color/bottom_nav_bg</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="colorControlHighlight">@color/control_ripple</item>
+    </style>
+</resources>

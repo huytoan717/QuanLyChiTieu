@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/bg_card"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <com.nhom9.quanlychitieu.ui.components.AdaptiveLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.05"
+            android:text="@string/layout_balance_card_2_text"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:breakStrategy="simple" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnManageWalletsHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/bg_btn_pill"
+            android:breakStrategy="simple"
+            android:minHeight="48dp"
+            android:paddingHorizontal="16dp"
+            android:text="@string/wallet_manage_title"
+            android:textAllCaps="false"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp" />
+    </com.nhom9.quanlychitieu.ui.components.AdaptiveLinearLayout>
+
+    <TextView
+        android:id="@+id/txtNetBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/wallet_integration_zero_amount"
+        android:textColor="@color/text_primary"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:breakStrategy="simple" />
+
+    <com.nhom9.quanlychitieu.ui.components.AdaptiveLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/layout_balance_card_6_text"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp"
+                android:breakStrategy="simple" />
+
+            <TextView
+                android:id="@+id/txtMonthlyExpense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/wallet_integration_zero_amount"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:breakStrategy="simple" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/layout_balance_card_8_text"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp"
+                android:breakStrategy="simple" />
+
+            <TextView
+                android:id="@+id/txtRemainingLimit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/wallet_integration_zero_amount"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:breakStrategy="simple" />
+        </LinearLayout>
+    </com.nhom9.quanlychitieu.ui.components.AdaptiveLinearLayout>
+
+    <com.nhom9.quanlychitieu.ui.components.WaveChartView
+        android:id="@+id/waveChartView"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginTop="16dp" />
+
+    <com.nhom9.quanlychitieu.ui.components.AdaptiveLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginEnd="12dp">
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="@drawable/bg_dot_cyan" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:text="@string/activity_add_transaction_btn_type_income_text"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp"
+                android:breakStrategy="simple"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginEnd="12dp">
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="@drawable/bg_dot_pink" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:text="@string/activity_add_transaction_btn_type_expense_text"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp"
+                android:breakStrategy="simple"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </com.nhom9.quanlychitieu.ui.components.AdaptiveLinearLayout>
+</LinearLayout>

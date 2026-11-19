@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wallet_integration_zero_amount">0 VNĐ</string>
+    <string name="wallet_integration_select">Chọn ví</string>
+    <string name="wallet_integration_unavailable">Ví không còn khả dụng</string>
+    <string name="wallet_integration_empty">Bạn chưa có ví. Mở Quản lý ví để tạo ví.</string>
+    <string name="wallet_integration_unloaded">Chưa tải được danh sách ví. Vui lòng thử lại.</string>
+    <string name="wallet_integration_select_source">Vui lòng chọn ví giao dịch.</string>
+    <string name="wallet_integration_select_destination">Vui lòng chọn ví nhận.</string>
+    <string name="wallet_integration_transfer_needs_two">Cần ít nhất hai ví để chuyển khoản. Mở Quản lý ví để tạo ví.</string>
+    <string name="wallet_integration_transfer_wallets">Từ %1$s sang %2$s</string>
+    <string name="wallet_integration_delete_confirm">%1$s\n%2$s\n%3$s\n%4$s</string>
+</resources>

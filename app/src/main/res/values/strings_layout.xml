@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="activity_add_transaction_btn_back_contentdescription" formatted="false">Quay lại</string>
+    <string name="activity_add_transaction_2_text" formatted="false">Thêm giao dịch</string>
+    <string name="activity_add_transaction_btn_type_expense_text" formatted="false">Chi tiêu</string>
+    <string name="activity_add_transaction_btn_type_income_text" formatted="false">Thu nhập</string>
+    <string name="activity_add_transaction_btn_type_transfer_text" formatted="false">Chuyển khoản</string>
+    <string name="activity_add_transaction_txt_amount_label_text" formatted="false">Số tiền chi tiêu (VNĐ)</string>
+    <string name="activity_add_transaction_btn_quick20k_contentdescription" formatted="false">Cộng 20 nghìn đồng</string>
+    <string name="activity_add_transaction_btn_quick20k_text" formatted="false">+20.000 đ</string>
+    <string name="activity_add_transaction_btn_quick50k_contentdescription" formatted="false">Cộng 50 nghìn đồng</string>
+    <string name="activity_add_transaction_btn_quick50k_text" formatted="false">+50.000 đ</string>
+    <string name="activity_add_transaction_btn_quick100k_contentdescription" formatted="false">Cộng 100 nghìn đồng</string>
+    <string name="activity_add_transaction_btn_quick100k_text" formatted="false">+100.000 đ</string>
+    <string name="activity_add_transaction_btn_quick200k_contentdescription" formatted="false">Cộng 200 nghìn đồng</string>
+    <string name="activity_add_transaction_btn_quick200k_text" formatted="false">+200.000 đ</string>
+    <string name="activity_add_transaction_btn_quick500k_contentdescription" formatted="false">Cộng 500 nghìn đồng</string>
+    <string name="activity_add_transaction_btn_quick500k_text" formatted="false">+500.000 đ</string>
+    <string name="activity_add_transaction_18_text" formatted="false">Ghi chú (không bắt buộc)</string>
+    <string name="activity_add_transaction_edt_note_hint" formatted="false">Ví dụ: Cà phê sáng</string>
+    <string name="activity_add_transaction_21_text" formatted="false">Nhập bằng giọng nói · Sắp có</string>
+    <string name="activity_add_transaction_22_text" formatted="false">Danh mục</string>
+    <string name="activity_add_transaction_cat_food_contentdescription" formatted="false">Ăn uống</string>
+    <string name="activity_add_transaction_cat_shopping_contentdescription" formatted="false">Mua sắm</string>
+    <string name="activity_add_transaction_cat_transport_contentdescription" formatted="false">Di chuyển</string>
+    <string name="activity_add_transaction_cat_bills_contentdescription" formatted="false">Hóa đơn</string>
+    <string name="activity_add_transaction_cat_entertainment_contentdescription" formatted="false">Giải trí</string>
+    <string name="activity_add_transaction_cat_health_contentdescription" formatted="false">Sức khỏe</string>
+    <string name="activity_add_transaction_cat_education_contentdescription" formatted="false">Giáo dục</string>
+    <string name="activity_add_transaction_cat_other_contentdescription" formatted="false">Khác</string>
+    <string name="activity_add_transaction_txt_wallet_label_text" formatted="false">Ví giao dịch</string>
+    <string name="activity_add_transaction_txt_wallet_name_text" formatted="false">Chọn ví</string>
+    <string name="activity_add_transaction_41_text" formatted="false">Ví nhận</string>
+    <string name="activity_add_transaction_txt_destination_wallet_name_text" formatted="false">Chọn ví nhận</string>
+    <string name="activity_add_transaction_43_text" formatted="false">Thời gian giao dịch</string>
+    <string name="activity_add_transaction_txt_transaction_time_text" formatted="false">Chọn ngày và giờ</string>
+    <string name="activity_add_transaction_45_text" formatted="false">Chụp hóa đơn AI</string>
+    <string name="activity_add_transaction_46_text" formatted="false">Sắp có · Chưa hỗ trợ quét hóa đơn</string>
+    <string name="activity_add_transaction_switch_exclude_budget_text" formatted="false">Không tính vào ngân sách</string>
+    <string name="activity_add_transaction_txt_exclude_budget_hint_text" formatted="false">Lưu lựa chọn cho giao dịch. Ngân sách hiện là dữ liệu minh họa.</string>
+    <string name="activity_add_transaction_txt_save_label_text" formatted="false">Lưu giao dịch</string>
+    <string name="layout_account_features_1_text" formatted="false">Tính năng &amp; Tiện ích thông minh</string>
+    <string name="layout_account_features_2_contentdescription" formatted="false">Export Data</string>
+    <string name="layout_account_features_3_text" formatted="false">Xuất dữ liệu giao dịch</string>
+    <string name="layout_account_features_4_text" formatted="false">Xuất Excel, CSV, PDF · Sắp có</string>
+    <string name="layout_account_features_5_text" formatted="false">Sắp có</string>
+    <string name="layout_account_features_6_contentdescription" formatted="false">Cloud Sync</string>
+    <string name="layout_account_features_7_text" formatted="false">Sao lưu &amp; Đồng bộ đám mây</string>
+    <string name="layout_account_features_8_text" formatted="false">Chưa có đồng bộ đám mây</string>
+    <string name="layout_account_header_img_account_avatar_contentdescription" formatted="false">Avatar</string>
+    <string name="layout_account_header_2_text" formatted="false">Hồ sơ cá nhân</string>
+    <string name="layout_account_header_3_text" formatted="false">Chưa có tính năng đăng nhập</string>
+    <string name="layout_account_header_btn_edit_profile_text" formatted="false">Sửa hồ sơ · Sắp có</string>
+    <string name="layout_account_settings_1_text" formatted="false">Cài đặt &amp; Bảo mật</string>
+    <string name="layout_account_settings_2_contentdescription" formatted="false">Biometric</string>
+    <string name="layout_account_settings_3_text" formatted="false">Bảo mật sinh trắc học</string>
+    <string name="layout_account_settings_4_text" formatted="false">Khóa ứng dụng bằng vân tay · Sắp có</string>
+    <string name="layout_account_settings_switch_biometric_contentdescription" formatted="false">Bảo mật sinh trắc học · Sắp có</string>
+    <string name="layout_account_settings_6_contentdescription" formatted="false">Theme Mode</string>
+    <string name="layout_account_settings_7_text" formatted="false">Chế độ giao diện</string>
+    <string name="layout_account_settings_8_text" formatted="false">Dark Glassmorphism</string>
+    <string name="layout_account_settings_9_text" formatted="false">Đổi giao diện · Sắp có</string>
+    <string name="layout_account_settings_10_contentdescription" formatted="false">Currency</string>
+    <string name="layout_account_settings_11_text" formatted="false">Đơn vị tiền tệ chính</string>
+    <string name="layout_account_settings_12_text" formatted="false">Việt Nam Đồng (VNĐ đ)</string>
+    <string name="layout_account_settings_13_text" formatted="false">Đổi tiền tệ · Sắp có</string>
+    <string name="layout_account_settings_14_contentdescription" formatted="false">Language</string>
+    <string name="layout_account_settings_15_text" formatted="false">Ngôn ngữ hiển thị</string>
+    <string name="layout_account_settings_16_text" formatted="false">Tiếng Việt (Mặc định)</string>
+    <string name="layout_account_settings_17_text" formatted="false">Đổi ngôn ngữ · Sắp có</string>
+    <string name="layout_account_settings_18_contentdescription" formatted="false">Support</string>
+    <string name="layout_account_settings_19_text" formatted="false">Trung tâm trợ giúp</string>
+    <string name="layout_account_settings_20_text" formatted="false">Hướng dẫn sử dụng · Sắp có</string>
+    <string name="layout_account_settings_22_contentdescription" formatted="false">Logout</string>
+    <string name="layout_account_settings_23_text" formatted="false">Đăng xuất · Sắp có</string>
+    <string name="layout_account_settings_24_text" formatted="false">Quản lý chi tiêu\nGiao dịch được lưu trên thiết bị này</string>
+    <string name="layout_balance_card_2_text" formatted="false">SỐ DƯ HIỆN TẠI</string>
+    <string name="layout_balance_card_6_text" formatted="false">Tổng chi tháng này</string>
+    <string name="layout_balance_card_8_text" formatted="false">Hạn mức còn lại</string>
+    <string name="layout_bottom_navigation_txt_tab_home_text" formatted="false">Trang chủ</string>
+    <string name="layout_bottom_navigation_txt_tab_report_text" formatted="false">Báo cáo</string>
+    <string name="layout_bottom_navigation_txt_tab_budget_text" formatted="false">Ngân sách</string>
+    <string name="layout_bottom_navigation_txt_tab_account_text" formatted="false">Tài khoản</string>
+    <string name="layout_budget_advice_2_text" formatted="false">Gợi ý minh họa</string>
+    <string name="layout_budget_advice_3_text" formatted="false">Ví dụ: Khi chi gần hết hạn mức Ăn uống, có thể cân nhắc điều chỉnh ngân sách Mua sắm.</string>
+    <string name="layout_budget_groups_1_text" formatted="false">Hạn mức theo nhóm</string>
+    <string name="layout_budget_groups_2_text" formatted="false">Tùy chỉnh</string>
+    <string name="layout_budget_groups_4_contentdescription" formatted="false">Food</string>
+    <string name="layout_budget_groups_5_text" formatted="false">Ăn uống &amp; Cà phê</string>
+    <string name="layout_budget_groups_6_text" formatted="false">Hạn mức tháng: 4.000.000 VNĐ</string>
+    <string name="layout_budget_groups_7_text" formatted="false">3.100.000</string>
+    <string name="layout_budget_groups_8_text" formatted="false">77% (Cận trần)</string>
+    <string name="layout_budget_groups_9_contentdescription" formatted="false">Car</string>
+    <string name="layout_budget_groups_10_text" formatted="false">Di chuyển &amp; Xăng xe</string>
+    <string name="layout_budget_groups_11_text" formatted="false">Hạn mức tháng: 2.000.000 VNĐ</string>
+    <string name="layout_budget_groups_12_text" formatted="false">950.000</string>
+    <string name="layout_budget_groups_13_text" formatted="false">47% (An toàn)</string>
+    <string name="layout_budget_groups_14_contentdescription" formatted="false">House</string>
+    <string name="layout_budget_groups_15_text" formatted="false">Thuê nhà &amp; Hóa đơn</string>
+    <string name="layout_budget_groups_17_text" formatted="false">4.000.000</string>
+    <string name="layout_budget_groups_18_text" formatted="false">100% (Đạt mức trần)</string>
+    <string name="layout_budget_groups_19_contentdescription" formatted="false">Shopping</string>
+    <string name="layout_budget_groups_20_text" formatted="false">Mua sắm &amp; Giải trí</string>
+    <string name="layout_budget_groups_21_text" formatted="false">Hạn mức tháng: 2.500.000 VNĐ</string>
+    <string name="layout_budget_groups_22_text" formatted="false">1.200.000</string>
+    <string name="layout_budget_groups_23_text" formatted="false">48% (Thong thả)</string>
+    <string name="layout_budget_header_1_text" formatted="false">NGÂN SÁCH MINH HỌA</string>
+    <string name="layout_budget_header_2_text" formatted="false">Ngân sách &amp; Mục tiêu</string>
+    <string name="layout_budget_header_3_contentdescription" formatted="false">Add Icon</string>
+    <string name="layout_budget_header_4_text" formatted="false">Thêm ngân sách</string>
+    <string name="layout_budget_overall_card_2_text" formatted="false">☲ Hạn mức tổng chi tiêu</string>
+    <string name="layout_budget_overall_card_3_text" formatted="false">15.000.000 VNĐ</string>
+    <string name="layout_budget_overall_card_4_text" formatted="false">61.6% Đã chi</string>
+    <string name="layout_budget_overall_card_5_text" formatted="false">Đã chi 9.250.000 VNĐ | Trần: 15.000.000 VNĐ</string>
+    <string name="layout_budget_overall_card_6_text" formatted="false">🛡 Còn lại an toàn</string>
+    <string name="layout_budget_overall_card_7_text" formatted="false">5.750.000 VNĐ</string>
+    <string name="layout_budget_overall_card_8_text" formatted="false">~479.000 VNĐ / ngày</string>
+    <string name="layout_budget_overall_card_9_text" formatted="false">⌛ Thời gian còn</string>
+    <string name="layout_budget_overall_card_10_text" formatted="false">12 ngày</string>
+    <string name="layout_budget_overall_card_11_text" formatted="false">Tốc độ chi: Rất tốt</string>
+    <string name="layout_budget_savings_goals_1_text" formatted="false">Quỹ mục tiêu tích lũy</string>
+    <string name="layout_budget_savings_goals_2_text" formatted="false">Hiện thực hóa dự định tương lai</string>
+    <string name="layout_budget_savings_goals_3_contentdescription" formatted="false">Piggy Goal</string>
+    <string name="layout_budget_savings_goals_5_contentdescription" formatted="false">Plane</string>
+    <string name="layout_budget_savings_goals_6_text" formatted="false">Du lịch Nhật Bản 🌸</string>
+    <string name="layout_budget_savings_goals_7_text" formatted="false">Dự kiến: Tháng 04/2025</string>
+    <string name="layout_budget_savings_goals_8_text" formatted="false">61%</string>
+    <string name="layout_budget_savings_goals_9_text" formatted="false">18.500.000 VNĐ</string>
+    <string name="layout_budget_savings_goals_10_text" formatted="false">Mục tiêu: 30.000.000 VNĐ</string>
+    <string name="layout_budget_savings_goals_11_text" formatted="false">Tự động nạp tiền · Sắp có</string>
+    <string name="layout_budget_savings_goals_12_text" formatted="false">Nạp thêm · Sắp có</string>
+    <string name="layout_budget_savings_goals_13_contentdescription" formatted="false">Shield</string>
+    <string name="layout_budget_savings_goals_14_text" formatted="false">Dự phòng khẩn cấp 🛡</string>
+    <string name="layout_budget_savings_goals_15_text" formatted="false">6 tháng sinh hoạt cơ bản</string>
+    <string name="layout_budget_savings_goals_16_text" formatted="false">84%</string>
+    <string name="layout_budget_savings_goals_17_text" formatted="false">42.000.000 VNĐ</string>
+    <string name="layout_budget_savings_goals_18_text" formatted="false">Mục tiêu: 50.000.000 VNĐ</string>
+    <string name="layout_budget_savings_goals_19_text" formatted="false">🎯 Chỉ còn 8.000.000 VNĐ là đạt</string>
+    <string name="layout_budget_savings_goals_20_text" formatted="false">Chi tiết · Sắp có</string>
+    <string name="layout_category_section_1_text" formatted="false">Thẻ danh mục chi tiêu</string>
+    <string name="layout_category_section_2_text" formatted="false">Xem tất cả</string>
+    <string name="layout_category_section_5_text" formatted="false">15%</string>
+    <string name="layout_category_section_7_text" formatted="false">630.000 VNĐ</string>
+    <string name="layout_category_section_8_text" formatted="false">Đăng ký số</string>
+    <string name="layout_category_section_9_text" formatted="false">30%</string>
+    <string name="layout_category_section_11_text" formatted="false">1.260.000 VNĐ</string>
+    <string name="layout_category_section_12_text" formatted="false">Thuê phòng</string>
+    <string name="layout_category_section_13_text" formatted="false">25%</string>
+    <string name="layout_category_section_15_text" formatted="false">1.050.000 VNĐ</string>
+    <string name="layout_category_section_16_text" formatted="false">Vật phẩm game</string>
+    <string name="layout_category_section_17_text" formatted="false">20%</string>
+    <string name="layout_category_section_19_text" formatted="false">840.000 VNĐ</string>
+    <string name="layout_header_section_1_text" formatted="false">QUẢN LÝ CHI TIÊU</string>
+    <string name="layout_header_section_2_text" formatted="false">Chào bạn</string>
+    <string name="layout_header_section_layout_notification_text" formatted="false">Thông báo · Sắp có</string>
+    <string name="layout_recent_transactions_1_text" formatted="false">Giao dịch đã lưu</string>
+    <string name="layout_recent_transactions_2_text" formatted="false">Trên thiết bị · Tối đa 50 giao dịch gần nhất</string>
+    <string name="layout_recent_transactions_saved_transaction_status_text" formatted="false">Đang đọc giao dịch…</string>
+    <string name="layout_recent_transactions_btn_retry_transactions_text" formatted="false">Thử đọc lại</string>
+    <string name="layout_report_ai_insight_1_text" formatted="false">✦</string>
+    <string name="layout_report_ai_insight_2_text" formatted="false">Nhận xét minh họa</string>
+    <string name="layout_report_ai_insight_3_text" formatted="false">Ví dụ: Giảm chi ăn uống có thể giúp dành thêm tiền cho mục tiêu tiết kiệm. Nhận xét này chưa dùng giao dịch đã lưu.</string>
+    <string name="layout_report_bar_chart_1_text" formatted="false">Biến động Thu – Chi</string>
+    <string name="layout_report_bar_chart_2_text" formatted="false">So sánh theo từng tuần</string>
+    <string name="layout_report_bar_chart_3_text" formatted="false">Thu</string>
+    <string name="layout_report_bar_chart_4_text" formatted="false">Chi</string>
+    <string name="layout_report_bar_chart_6_text" formatted="false">ⓘ</string>
+    <string name="layout_report_bar_chart_7_text" formatted="false">Ví dụ minh họa: Tuần 2 có khoản chi thiết bị nên tổng chi cao hơn.</string>
+    <string name="layout_report_distribution_1_text" formatted="false">Phân bố chi tiêu</string>
+    <string name="layout_report_distribution_2_text" formatted="false">4 danh mục</string>
+    <string name="layout_report_distribution_5_text" formatted="false">Mua sắm &amp; Ăn</string>
+    <string name="layout_report_distribution_6_text" formatted="false">35%</string>
+    <string name="layout_report_distribution_11_text" formatted="false">Nhà &amp; Hóa đơn</string>
+    <string name="layout_report_distribution_13_contentdescription" formatted="false">Game</string>
+    <string name="layout_report_distribution_14_text" formatted="false">Giải trí &amp; Game</string>
+    <string name="layout_report_header_img_report_icon_contentdescription" formatted="false">Report Icon</string>
+    <string name="layout_report_header_2_text" formatted="false">Phân tích tài chính</string>
+    <string name="layout_report_header_3_text" formatted="false">Báo cáo &amp; Thống kê</string>
+    <string name="layout_report_header_btn_share_text" formatted="false">Chia sẻ · Sắp có</string>
+    <string name="layout_report_header_5_text" formatted="false">Số liệu minh họa · Báo cáo chưa tính từ giao dịch đã lưu.</string>
+    <string name="layout_report_header_6_text" formatted="false">Tuần · Sắp có</string>
+    <string name="layout_report_header_7_text" formatted="false">Tháng mẫu</string>
+    <string name="layout_report_header_8_text" formatted="false">Năm · Sắp có</string>
+    <string name="layout_report_summary_2_text" formatted="false">Tổng chi tiêu kỳ này</string>
+    <string name="layout_report_summary_4_text" formatted="false">-12.5%</string>
+    <string name="layout_report_summary_5_text" formatted="false">8.450.000 VNĐ</string>
+    <string name="layout_report_summary_6_text" formatted="false">⟳ Tổng thu nhập</string>
+    <string name="layout_report_summary_7_text" formatted="false">20.500.000 đ</string>
+    <string name="layout_report_summary_8_text" formatted="false">⟳ Tỷ lệ tiết kiệm</string>
+    <string name="layout_report_summary_9_text" formatted="false">58.8%</string>
+</resources>

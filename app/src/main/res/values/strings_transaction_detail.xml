@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="transaction_detail_title">Chi tiết giao dịch</string>
+    <string name="transaction_detail_note">Ghi chú</string>
+    <string name="transaction_detail_empty_note">Không có ghi chú</string>
+    <string name="transaction_detail_missing_value">Chưa có thông tin</string>
+    <string name="transaction_detail_budget">Ngân sách</string>
+    <string name="transaction_detail_budget_included">Có tính vào ngân sách</string>
+    <string name="transaction_detail_budget_excluded">Không tính vào ngân sách</string>
+    <string name="transaction_detail_sync_no_pending">Không có thay đổi đang chờ đồng bộ.</string>
+    <string name="transaction_detail_sync_pending">Đang chờ đồng bộ lên đám mây.</string>
+    <string name="transaction_detail_sync_failed">Không thể kết nối với dịch vụ đồng bộ.</string>
+    <string name="transaction_detail_pending_failed">Thay đổi đã lưu trên thiết bị. Đồng bộ chưa thành công.</string>
+    <string name="transaction_detail_sync_retry">Thử đồng bộ lại</string>
+    <string name="transaction_detail_edit">Sửa giao dịch</string>
+    <string name="transaction_detail_delete">Xóa giao dịch</string>
+    <string name="transaction_detail_delete_title">Xóa giao dịch này?</string>
+    <string name="transaction_detail_delete_confirm">%1$s\n%2$s\n%3$s</string>
+    <string name="transaction_detail_deleting">Đang xóa giao dịch…</string>
+    <string name="transaction_detail_deleted">Đã xóa giao dịch trên thiết bị</string>
+    <string name="transaction_detail_delete_failed">Chưa xóa được giao dịch. Vui lòng thử lại.</string>
+    <string name="transaction_detail_missing">Giao dịch không còn khả dụng.</string>
+</resources>

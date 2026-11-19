@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_add_transaction"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main_gradient"
+    tools:context=".ui.transaction.AddTransactionActivity">
+
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_circle_translucent"
+            android:clickable="true"
+            android:contentDescription="@string/activity_add_transaction_btn_back_contentdescription"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_back"
+                app:tint="@color/text_primary" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/txtTransactionTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:text="@string/activity_add_transaction_2_text"
+            android:textColor="@color/text_primary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/transactionScroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@id/bottomActionContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card"
+                android:baselineAligned="false"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
+                <TextView
+                    android:id="@+id/btnTypeExpense"
+                    style="@style/TransactionTypeSegment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_pill"
+                    android:text="@string/activity_add_transaction_btn_type_expense_text"
+                    android:textColor="@color/text_primary"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/btnTypeIncome"
+                    style="@style/TransactionTypeSegment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/activity_add_transaction_btn_type_income_text" />
+
+                <TextView
+                    android:id="@+id/btnTypeTransfer"
+                    style="@style/TransactionTypeSegment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/activity_add_transaction_btn_type_transfer_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_card"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/txtAmountLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:labelFor="@id/edtAmount"
+                    android:text="@string/activity_add_transaction_txt_amount_label_text"
+                    android:textColor="@color/red_expense"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <!-- Autofill exists only on API 26+; the permanent label works on every supported API. -->
+                <EditText
+                    android:id="@+id/edtAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/bg_card_inner"
+                    android:importantForAutofill="no"
+                    android:imeOptions="actionNext|flagNoExtractUi"
+                    android:inputType="number"
+                    android:minHeight="56dp"
+                    android:nextFocusForward="@id/edtNote"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_primary"
+                    android:textColorHint="@color/text_secondary"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    tools:targetApi="o" />
+
+                <TextView
+                    android:id="@+id/txtAmountError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:accessibilityLiveRegion="polite"
+                    android:paddingBottom="8dp"
+                    android:textColor="@color/red_expense"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    tools:text="Nhập số tiền lớn hơn 0 VNĐ." />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:scrollbars="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="4dp">
+
+                        <TextView
+                            android:id="@+id/btnQuick20k"
+                            style="@style/TransactionQuickAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:contentDescription="@string/activity_add_transaction_btn_quick20k_contentdescription"
+                            android:text="@string/activity_add_transaction_btn_quick20k_text" />
+
+                        <TextView
+                            android:id="@+id/btnQuick50k"
+                            style="@style/TransactionQuickAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:contentDescription="@string/activity_add_transaction_btn_quick50k_contentdescription"
+                            android:text="@string/activity_add_transaction_btn_quick50k_text" />
+
+                        <TextView
+                            android:id="@+id/btnQuick100k"
+                            style="@style/TransactionQuickAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:contentDescription="@string/activity_add_transaction_btn_quick100k_contentdescription"
+                            android:text="@string/activity_add_transaction_btn_quick100k_text" />
+
+                        <TextView
+                            android:id="@+id/btnQuick200k"
+                            style="@style/TransactionQuickAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:contentDescription="@string/activity_add_transaction_btn_quick200k_contentdescription"
+                            android:text="@string/activity_add_transaction_btn_quick200k_text" />
+
+                        <TextView
+                            android:id="@+id/btnQuick500k"
+                            style="@style/TransactionQuickAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/activity_add_transaction_btn_quick500k_contentdescription"
+                            android:text="@string/activity_add_transaction_btn_quick500k_text" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:labelFor="@id/edtNote"
+                    android:text="@string/activity_add_transaction_18_text"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="14sp" />
+
+                <!-- This free-form transaction note must not receive credential autofill. -->
+                <EditText
+                    android:id="@+id/edtNote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_card_inner"
+                    android:gravity="top|start"
+                    android:importantForAutofill="no"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:minHeight="56dp"
+                    android:padding="12dp"
+                    android:textColor="@color/text_primary"
+                    android:textColorHint="@color/text_secondary"
+                    android:textSize="16sp"
+                    tools:targetApi="o" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/activity_add_transaction_edt_note_hint"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/btnMic"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:clickable="false"
+                        android:contentDescription="@null"
+                        android:enabled="false"
+                        android:importantForAccessibility="no"
+                        android:padding="13dp"
+                        android:src="@drawable/ic_mic"
+                        app:tint="@color/text_secondary" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/activity_add_transaction_21_text"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/categorySection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtCategoryHeading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_add_transaction_22_text"
+                    android:textColor="@color/text_primary"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <GridLayout
+                    android:id="@+id/categoryGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:alignmentMode="alignMargins"
+                    android:columnCount="4"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/catFood"
+                        style="@style/TransactionCategory"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="fill"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/bg_category_active"
+                        android:text="@string/activity_add_transaction_cat_food_contentdescription"
+                        app:drawableTopCompat="@drawable/ic_utensils" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/catShopping"
+                        style="@style/TransactionCategory"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="fill"
+                        android:layout_margin="4dp"
+                        android:text="@string/activity_add_transaction_cat_shopping_contentdescription"
+                        app:drawableTopCompat="@drawable/ic_shopping_cart" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/catTransport"
+                        style="@style/TransactionCategory"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="fill"
+                        android:layout_margin="4dp"
+                        android:text="@string/activity_add_transaction_cat_transport_contentdescription"
+                        app:drawableTopCompat="@drawable/ic_car" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/catBills"
+                        style="@style/TransactionCategory"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="fill"
+                        android:layout_margin="4dp"
+                        android:text="@string/activity_add_transaction_cat_bills_contentdescription"
+                        app:drawableTopCompat="@drawable/ic_credit_card" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/catEntertainment"
+                        style="@style/TransactionCategory"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="fill"
+                        android:layout_margin="4dp"
+                        android:text="@string/activity_add_transaction_cat_entertainment_contentdescription"
+                        app:drawableTopCompat="@drawable/ic_gamepad" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/catHealth"
+                        style="@style/TransactionCategory"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="fill"
+                        android:layout_margin="4dp"
+                        android:text="@string/activity_add_transaction_cat_health_contentdescription"
+                        app:drawableTopCompat="@drawable/ic_heart" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/catEducation"
+                        style="@style/TransactionCategory"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="fill"
+                        android:layout_margin="4dp"
+                        android:text="@string/activity_add_transaction_cat_education_contentdescription"
+                        app:drawableTopCompat="@drawable/ic_school" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/catOther"
+                        style="@style/TransactionCategory"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="fill"
+                        android:layout_margin="4dp"
+                        android:text="@string/activity_add_transaction_cat_other_contentdescription"
+                        app:drawableTopCompat="@drawable/ic_more_horiz" />
+                </GridLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnSelectWallet"
+                style="@style/TransactionSelector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:layout_marginTop="16dp">
+
+                <FrameLayout
+                    android:id="@+id/walletIcon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_badge_cyan">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_gravity="center"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/ic_wallet"
+                        app:tint="@color/text_primary" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtWalletLabel"
+                        style="@style/TransactionFieldLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/activity_add_transaction_txt_wallet_label_text" />
+
+                    <TextView
+                        android:id="@+id/txtWalletName"
+                        style="@style/TransactionFieldValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/activity_add_transaction_txt_wallet_name_text" />
+                </LinearLayout>
+
+                <ImageView
+                    style="@style/TransactionSelectorIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:importantForAccessibility="no" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnDestinationWallet"
+                style="@style/TransactionSelector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+                <FrameLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_badge_cyan">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_gravity="center"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/ic_wallet"
+                        app:tint="@color/text_primary" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TransactionFieldLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/activity_add_transaction_41_text" />
+
+                    <TextView
+                        android:id="@+id/txtDestinationWalletName"
+                        style="@style/TransactionFieldValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/activity_add_transaction_txt_destination_wallet_name_text" />
+                </LinearLayout>
+
+                <ImageView
+                    style="@style/TransactionSelectorIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:importantForAccessibility="no" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnSelectTime"
+                style="@style/TransactionSelector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:layout_marginTop="10dp">
+
+                <FrameLayout
+                    android:id="@+id/timeIcon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_badge_yellow">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_gravity="center"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/ic_calendar"
+                        app:tint="@color/text_primary" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TransactionFieldLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/activity_add_transaction_43_text" />
+
+                    <TextView
+                        android:id="@+id/txtTransactionTime"
+                        style="@style/TransactionFieldValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/activity_add_transaction_txt_transaction_time_text" />
+                </LinearLayout>
+
+                <ImageView
+                    style="@style/TransactionSelectorIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:importantForAccessibility="no" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnScanReceipt"
+                style="@style/TransactionSelector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:layout_marginTop="10dp"
+                android:clickable="false"
+                android:enabled="false">
+
+                <FrameLayout
+                    android:id="@+id/aiIcon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_badge_pink">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_gravity="center"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/ic_camera"
+                        app:tint="@color/text_secondary" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TransactionFieldValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/activity_add_transaction_45_text" />
+
+                    <TextView
+                        style="@style/TransactionFieldLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/activity_add_transaction_46_text" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchExcludeBudget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:minHeight="48dp"
+                android:paddingVertical="8dp"
+                android:singleLine="false"
+                android:text="@string/activity_add_transaction_switch_exclude_budget_text"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp"
+                app:switchPadding="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtExcludeBudgetHint"
+                android:text="@string/activity_add_transaction_txt_exclude_budget_hint_text"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottomActionContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_main_dark"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/btnSaveTransaction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn_primary"
+            android:clickable="true"
+            android:elevation="6dp"
+            android:focusable="true"
+            android:gravity="center"
+            android:minHeight="56dp"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_check_circle"
+                app:tint="@color/text_primary" />
+
+            <TextView
+                android:id="@+id/txtSaveLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/activity_add_transaction_txt_save_label_text"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

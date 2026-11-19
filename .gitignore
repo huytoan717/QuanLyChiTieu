@@ -1,0 +1,47 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Local IDE, Gradle and assistant state
+.idea/
+.kotlin/
+.codex/
+**/build/
+__pycache__/
+*.py[cod]
+
+# Machine-specific configuration and signing material
+**/google-services.json
+.env
+.env.*
+!.env.example
+*.jks
+*.keystore
+key.properties
+keystore.properties
+*service-account*.json
+*serviceAccount*.json
+*firebase-adminsdk*.json
+
+# Generated reports, captures and packaged copies
+/outputs/
+/report_screenshots/
+/*.docx
+/*.pdf
+/*.rar
+/*.zip
+*.apk
+*.aab
+*.log
